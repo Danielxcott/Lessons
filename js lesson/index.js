@@ -35,7 +35,7 @@
 // console.log(odd);
 
 /*Sum All Num */
-const num = [8,3];
+// const num = [8,3];
 // function sumAllNum(arr){
 //     const max = Math.max(...arr);
 //     const min = Math.min(...arr);
@@ -45,11 +45,52 @@ const num = [8,3];
 //     }
 //     return temp;
 // }
-function sumAllNum(arr){
-    const sort = arr.sort((a,b)=>a-b);
-    const firt = sort[0];
-    const last = sort[1];
-    const sum = (last-firt+1)*(firt+last)/2;
-    return sum;
-}
-console.log(sumAllNum(num))
+// function sumAllNum(arr){
+//     const sort = arr.sort((a,b)=>a-b);
+//     const firt = sort[0];
+//     const last = sort[1];
+//     const sum = (last-firt+1)*(firt+last)/2;
+//     return sum;
+// }
+// console.log(sumAllNum(num))
+
+/*Filter through two array */
+// function differArray(arr1,arr2){
+//     return arr1.concat(arr2).filter(item=>!arr1.includes(item) || !arr2.includes(item));
+// }
+// function differArray(arr1,arr2){
+//     return arr1.filter(item=>!arr2.includes(item)).concat(arr2.filter(item=>!arr1.includes(item)));
+// }
+// function differArray(arr1,arr2){
+//     let newArr = [];
+//     let order = [...arr1,...arr2].sort();
+//     for(let i = 0; i<=order.length;i++){
+//         if(order[i] !== order[i+1] && order[i] !== order[i-1]){
+//             newArr.push(order[i]);
+//         }
+//     }
+//     const result = newArr.sort((a,b)=>a-b);
+//     return result ;
+// }
+// console.log(differArray([1,2,3,6],[3,7,9,5,1,10]));
+
+/*isPermutation*/
+// const isPermutation = (arr1,arr2) =>{
+//     const x = arr1.split("").sort().join("");
+//     const y = arr2.split("").sort().join("");
+//     return x == y;
+// }
+// console.log(isPermutation("hello daniel","elloh andiel"));
+
+/*Name swap*/
+// const nameSwap = (str) =>{
+//     const x = str.split(" ");
+//     const y = x.reverse();
+//     return y.join(" ");
+// }
+// const nameSwap = (str) =>{
+//     const x = str.split(" ");
+//     const result = x[1]+" "+x[0];
+//     return result;
+// }
+// console.log(nameSwap("Ariana Grande"))
