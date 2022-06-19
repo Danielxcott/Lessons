@@ -35,14 +35,21 @@
 // console.log(odd);
 
 /*Sum All Num */
-const num = [3,8];
+const num = [8,3];
+// function sumAllNum(arr){
+//     const max = Math.max(...arr);
+//     const min = Math.min(...arr);
+//     let temp = 0;
+//     for(let i = min; i<=max; i++){
+//         temp += i;
+//     }
+//     return temp;
+// }
 function sumAllNum(arr){
-    const max = Math.max(...arr);
-    const min = Math.min(...arr);
-    let temp = 0;
-    for(let i = min; i<=max; i++){
-        temp += i;
-    }
-    return temp;
+    const sort = arr.sort((a,b)=>a-b);
+    const firt = sort[0];
+    const last = sort[1];
+    const sum = (last-firt+1)*(firt+last)/2;
+    return sum;
 }
 console.log(sumAllNum(num))
