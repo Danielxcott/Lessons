@@ -33,3 +33,16 @@
 //     }
 // }
 // console.log(odd);
+
+/*Sum All Num */
+const num = [3,8];
+function sumAllNum(arr){
+    const max = Math.max(...arr);
+    const min = Math.min(...arr);
+    let temp = 0;
+    for(let i = min; i<=max; i++){
+        temp += i;
+    }
+    return temp;
+}
+console.log(sumAllNum(num))
