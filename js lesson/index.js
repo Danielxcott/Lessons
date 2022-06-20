@@ -93,4 +93,12 @@
 //     const result = x[1]+" "+x[0];
 //     return result;
 // }
+// const nameSwap = (str) => {
+//     const x = str.split(" ");
+//     let resultSwap = [];
+//     for(let i = 1; i>=0;i--){
+//         resultSwap.push(x[i]);
+//     }
+//     return resultSwap.join(" ");
+// }
 // console.log(nameSwap("Ariana Grande"))
