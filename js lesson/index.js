@@ -102,3 +102,13 @@
 //     return resultSwap.join(" ");
 // }
 // console.log(nameSwap("Ariana Grande"))
+//Repeat a string with loop
+// let newItem = "";
+// function loop(item,num){
+//     for(let i=0;i<=num;i++){
+//         newItem += item;
+//     }
+//     return newItem;
+// }
+
+// console.log(loop("car ",5))
