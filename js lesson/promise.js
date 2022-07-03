@@ -37,15 +37,48 @@ function finalResult(){
 // })
 
 //promise Chaining to avoid callback hell
-login().then((data)=>{
-    console.log(data);
-    return fetchData();
-})
-.then((fData)=>{
-    console.log(fData);
+// login().then((data)=>{
+//     console.log(data);
+//     return fetchData();
+// })
+// .then((fData)=>{
+//     console.log(fData);
+//     finalResult();
+//     return errorData();
+// })
+// .catch((error)=>{
+//     console.log("can't solve the problem"+error);
+// })
+
+//async & await
+// const loginUi = async () =>{
+//     try{
+//         const loginData = await login();
+//     console.log(loginData);
+//     const fetch = await fetchData();
+//     console.log(fetch);
+//     const error = await errorData();
+//     console.log(error);
+//     }catch (error){
+//         console.log("This is error"+error);
+//     }finally{
+//         finalResult();
+
+//     }
+// }
+
+// loginUi();
+
+const loginUi = async () =>{
+        const loginData = await login();
+    console.log(loginData);
+    const fetch = await fetchData();
+    console.log(fetch);
+    const error = await errorData();
+    console.log(error);
+}
+
+loginUi().catch((error)=>{
+    console.log(error);
     finalResult();
-    return errorData();
-})
-.catch((error)=>{
-    console.log("can't solve the problem"+error);
 })
